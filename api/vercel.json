@@ -1,18 +1,10 @@
 {
-  "builds": [
-    {
-      "src": "api/main.py",
-      "use": "@vercel/python"
+  "functions": {
+    "api/cookies.py": {
+      "runtime": "python3.9"
     }
-  ],
+  },
   "rewrites": [
-    {
-      "source": "/image.png",
-      "destination": "api/main.py"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "api/main.py"
-    }
+    { "source": "/(.*)", "destination": "/api/cookies" }
   ]
 }
