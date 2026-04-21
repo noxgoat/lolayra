@@ -1,10 +1,10 @@
 {
   "functions": {
-    "api/cookies.py": {
+    "api/index.py": {
       "runtime": "python3.9"
     }
   },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/api/cookies" }
+    { "source": "/(.*)", "destination": "/api/index.py" }
   ]
 }
